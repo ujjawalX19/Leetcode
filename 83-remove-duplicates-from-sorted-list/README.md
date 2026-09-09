@@ -23,3 +23,12 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 	<li>The list is guaranteed to be <strong>sorted</strong> in ascending order.</li>
 </ul>
+
+## Approach
+
+Walk the sorted list once. When adjacent values match, bypass the next node; otherwise advance the current pointer.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(1)`

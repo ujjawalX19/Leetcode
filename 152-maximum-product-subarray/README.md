@@ -29,3 +29,12 @@
 	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 	<li>The product of any subarray of <code>nums</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</li>
 </ul>
+
+## Approach
+
+Scan products from both directions, resetting after zero. This captures subarrays whose optimal product is exposed after an odd number of negative values.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(1)`

@@ -29,3 +29,12 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+## Approach
+
+Use BFS to build each level from left to right, then add each completed level to the front of a linked list to produce bottom-up order.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

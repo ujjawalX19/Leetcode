@@ -31,3 +31,12 @@
 	<li>The number of nodes in both trees is in the range <code>[0, 100]</code>.</li>
 	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+
+Perform preorder traversal on both trees, recording `null` markers as well as node values. The trees are identical only when the two traversal sequences match.
+
+## Complexity
+
+- Time: `O(n + m)`
+- Space: `O(n + m)`

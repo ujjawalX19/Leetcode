@@ -9,6 +9,15 @@
 	</li>
 </ul>
 
+## Approach
+
+Extract each digit once to accumulate its sum and product, then test whether `n` is divisible by their sum.
+
+## Complexity
+
+- Time: `O(log n)`
+- Space: `O(1)`
+
 <p>Return <code>true</code> if <code>n</code> is divisible by this sum; otherwise, return <code>false</code>.</p>
 
 <p>&nbsp;</p>

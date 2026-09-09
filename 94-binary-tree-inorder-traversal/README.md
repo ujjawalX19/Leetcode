@@ -51,3 +51,12 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
+
+## Approach
+
+Recursively visit the left subtree, record the current node, and then visit the right subtree to produce inorder traversal.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(h)` for recursion, excluding the result

@@ -40,3 +40,12 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you find an <code>O(nums1.length + nums2.length)</code> solution?
+
+## Approach
+
+For each value in `nums1`, locate it in `nums2`, then scan right until a larger value is found. Store `-1` when none exists.
+
+## Complexity
+
+- Time: `O(m × n)`
+- Space: `O(m)` for the output

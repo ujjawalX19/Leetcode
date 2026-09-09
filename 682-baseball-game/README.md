@@ -26,6 +26,15 @@
 	</li>
 </ul>
 
+## Approach
+
+Maintain a stack of valid scores. Apply each operation by removing, duplicating, or combining the latest scores, then sum the stack at the end.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`
+
 <p>Return <em>the sum of all the scores on the record after applying all the operations</em>.</p>
 
 <p>The test cases are generated such that the answer and all intermediate calculations fit in a <strong>32-bit</strong> integer and that all operations are valid.</p>

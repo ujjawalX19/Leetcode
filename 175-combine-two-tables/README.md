@@ -67,3 +67,12 @@ Address table:
 There is no address in the address table for the personId = 1 so we return null in their city and state.
 addressId = 1 contains information about the address of personId = 2.
 </pre>
+
+## Approach
+
+Use a `LEFT JOIN` from `Person` to `Address` on `personId`, preserving every person and returning `NULL` for a missing address.
+
+## Complexity
+
+- Time: `O(P + A)` with a hash-join query plan
+- Space: database-engine dependent

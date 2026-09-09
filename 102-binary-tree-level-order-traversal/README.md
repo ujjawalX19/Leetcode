@@ -29,3 +29,12 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+## Approach
+
+Use breadth-first search (BFS). Process exactly the current queue size at each step to collect one tree level, then enqueue its children.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

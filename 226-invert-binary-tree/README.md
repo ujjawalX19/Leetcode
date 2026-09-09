@@ -29,3 +29,12 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Traverse the tree with BFS. At every visited node, swap its left and right references before enqueuing its children.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

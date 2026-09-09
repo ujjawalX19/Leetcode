@@ -28,3 +28,12 @@
 	<li>The tree consists only of the root, its left child, and its right child.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Compare the root value directly with the sum of its two children.
+
+## Complexity
+
+- Time: `O(1)`
+- Space: `O(1)`

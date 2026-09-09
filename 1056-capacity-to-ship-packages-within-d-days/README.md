@@ -50,3 +50,12 @@ Note that the cargo must be shipped in the order given, so using a ship of capac
 	<li><code>1 &lt;= days &lt;= weights.length &lt;= 5 * 10<sup>4</sup></code></li>
 	<li><code>1 &lt;= weights[i] &lt;= 500</code></li>
 </ul>
+
+## Approach
+
+Binary-search the capacity between the heaviest package and the total weight. For each candidate, greedily load packages in order and count the required days.
+
+## Complexity
+
+- Time: `O(n log S)`, where `S` is the sum of weights
+- Space: `O(1)`

@@ -48,3 +48,12 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Use BFS and append the final node processed at each level; with left-to-right enqueueing, that node is the visible rightmost node.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

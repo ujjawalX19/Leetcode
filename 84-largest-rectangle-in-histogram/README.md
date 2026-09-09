@@ -24,3 +24,12 @@ The largest rectangle is shown in the red area, which has an area = 10 units.
 	<li><code>1 &lt;= heights.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= heights[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+
+Use a monotonic increasing stack of bar indices. When a shorter bar appears, pop taller bars and calculate each popped bar's widest possible rectangle.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

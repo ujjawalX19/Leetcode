@@ -6,6 +6,15 @@
 	<li><code>nums2</code> should also contain <strong>distinct</strong> elements.</li>
 </ul>
 
+## Approach
+
+Count occurrences with a hash map and return `false` as soon as a value occurs more than twice; otherwise the two required arrays can be formed.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`
+
 <p>Return <code>true</code><em> if it is possible to split the array, and </em><code>false</code> <em>otherwise</em><em>.</em></p>
 
 <p>&nbsp;</p>

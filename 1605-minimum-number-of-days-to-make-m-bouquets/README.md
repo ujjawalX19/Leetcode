@@ -50,3 +50,12 @@ It is obvious that we can make two bouquets in different ways.
 	<li><code>1 &lt;= m &lt;= 10<sup>6</sup></code></li>
 	<li><code>1 &lt;= k &lt;= n</code></li>
 </ul>
+
+## Approach
+
+Binary-search the day. For a candidate day, linearly count consecutive bloomed flowers and convert each run into as many groups of `k` as possible.
+
+## Complexity
+
+- Time: `O(n log D)`, where `D` is the bloom-day range
+- Space: `O(1)`

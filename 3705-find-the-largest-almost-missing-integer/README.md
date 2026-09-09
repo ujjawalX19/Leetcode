@@ -22,6 +22,15 @@ A <strong>subarray</strong> is a contiguous sequence of elements within an array
 	<li index="4">9 appears in 2 subarrays of size 3: <code>[3, 9, 2]</code>, and <code>[9, 2, 1]</code>.</li>
 </ul>
 
+## Approach
+
+For each subarray of length `k`, deduplicate its values with a set and count in how many windows each value appears. The answer is the largest value whose count is one.
+
+## Complexity
+
+- Time: `O((n - k + 1) × k)`
+- Space: `O(n)`
+
 <p>We return 7 since it is the largest integer that appears in exactly one subarray of size <code>k</code>.</p>
 </div>
 

@@ -27,3 +27,12 @@
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Use postorder DFS: each call returns its subtree height and updates a global diameter with the sum of the left and right heights.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(h)` for recursion

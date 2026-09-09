@@ -33,3 +33,12 @@
 	<li><code>intervals[i].length == 2</code></li>
 	<li><code>0 &lt;= start<sub>i</sub> &lt;= end<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+
+Sort intervals by start time, then compare each interval with the last merged interval. Extend it on overlap or append a new interval otherwise.
+
+## Complexity
+
+- Time: `O(n log n)`
+- Space: `O(n)`

@@ -23,3 +23,12 @@ Hence return [3, 14.5, 11].
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+## Approach
+
+Use BFS, summing values and counting nodes for one level at a time. Append `sum / levelSize` for every completed level.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

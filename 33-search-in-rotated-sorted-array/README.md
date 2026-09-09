@@ -27,3 +27,12 @@
 	<li><code>nums</code> is an ascending array that is possibly rotated.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+
+Use binary search while identifying which half is sorted. Search that half only when it contains the target; otherwise continue in the other half.
+
+## Complexity
+
+- Time: `O(log n)`
+- Space: `O(1)`

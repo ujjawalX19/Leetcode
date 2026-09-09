@@ -18,3 +18,12 @@
 	<li><code>1 &lt;=&nbsp;temperatures.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>30 &lt;=&nbsp;temperatures[i] &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Keep a decreasing monotonic stack of unresolved day indices. A warmer temperature resolves every smaller temperature on top of the stack.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

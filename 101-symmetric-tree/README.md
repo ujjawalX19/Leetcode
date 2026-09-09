@@ -23,5 +23,14 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 
+## Approach
+
+Recursively compare mirrored node pairs: left subtree's left child with right subtree's right child, and vice versa. A mismatch in structure or value makes the tree asymmetric.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(h)` for recursion
+
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it both recursively and iteratively?

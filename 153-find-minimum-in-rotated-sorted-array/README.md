@@ -5,6 +5,15 @@
 	<li><code>[0,1,2,4,5,6,7]</code> if it was rotated <code>7</code> times.</li>
 </ul>
 
+## Approach
+
+Binary-search for the rotation point. Compare the middle value with the rightmost value to discard the sorted half that cannot contain the minimum.
+
+## Complexity
+
+- Time: `O(log n)`
+- Space: `O(1)`
+
 <p>Notice that <strong>rotating</strong> an array <code>[a[0], a[1], a[2], ..., a[n-1]]</code> 1 time results in the array <code>[a[n-1], a[0], a[1], a[2], ..., a[n-2]]</code>.</p>
 
 <p>Given the sorted rotated array <code>nums</code> of <strong>unique</strong> elements, return <em>the minimum element of this array</em>.</p>

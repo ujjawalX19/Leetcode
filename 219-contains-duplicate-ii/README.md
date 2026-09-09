@@ -30,3 +30,12 @@
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>0 &lt;= k &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+## Approach
+
+Store each value's most recent index in a hash map. When a value reappears, compare its two indices to `k` before updating the stored index.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

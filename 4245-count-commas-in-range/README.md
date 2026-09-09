@@ -9,6 +9,15 @@
 	<li>Numbers with <strong>fewer</strong> than 4 digits contain no commas.</li>
 </ul>
 
+## Approach
+
+Iterate from `1` through `n` and increment the count for each value of at least `1000`, matching the current implementation.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(1)`
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 

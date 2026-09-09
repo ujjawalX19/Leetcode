@@ -50,3 +50,12 @@
 	<li><code>2 &lt;= nums.length &lt;= 100</code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Sort the array, then walk it with the next expected value. Add every value skipped between consecutive elements to the answer.
+
+## Complexity
+
+- Time: `O(n log n)`
+- Space: `O(m)` for the returned missing values

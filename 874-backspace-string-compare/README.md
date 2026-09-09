@@ -37,3 +37,12 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it in <code>O(n)</code> time and <code>O(1)</code> space?</p>
+
+## Approach
+
+Simulate each editor with a stack: push letters and pop on a backspace when possible. Compare the two resulting stacks.
+
+## Complexity
+
+- Time: `O(s + t)`
+- Space: `O(s + t)`

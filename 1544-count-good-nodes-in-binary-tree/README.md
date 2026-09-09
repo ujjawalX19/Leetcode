@@ -39,3 +39,12 @@ Node 3 -&gt; (3,1,3) is the maximum value in the path.</pre>
 	<li>The number of nodes in the binary tree is in the range&nbsp;<code>[1, 10^5]</code>.</li>
 	<li>Each node&#39;s value is between <code>[-10^4, 10^4]</code>.</li>
 </ul>
+
+## Approach
+
+Traverse the tree in preorder while carrying the maximum value on the current root-to-node path. Count a node whenever its value is at least that maximum.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(h)` for recursion

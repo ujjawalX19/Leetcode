@@ -29,3 +29,12 @@
 	<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> there is exactly one <code>x</code> that is equal to exactly two of the grid members.</li>
 	<li>For all <code>x</code> that <code>1 &lt;= x &lt;= n * n</code> except two of them there is exactly one pair of <code>i, j</code> that <code>0 &lt;= i, j &lt;= n - 1</code> and <code>grid[i][j] == x</code>.</li>
 </ul>
+
+## Approach
+
+Count every value in a frequency array indexed from `1` through `n²`, then find the entry with frequency two and the entry with frequency zero.
+
+## Complexity
+
+- Time: `O(n²)`
+- Space: `O(n²)`

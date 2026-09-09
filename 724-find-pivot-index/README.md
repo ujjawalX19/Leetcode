@@ -47,3 +47,12 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as&nbsp;1991:&nbsp;<a href="https://leetcode.com/problems/find-the-middle-index-in-array/" target="_blank">https://leetcode.com/problems/find-the-middle-index-in-array/</a></p>
+
+## Approach
+
+Compute the total sum once, then scan while maintaining the left sum. At each index, the right sum is `total - left - nums[i]`.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(1)`

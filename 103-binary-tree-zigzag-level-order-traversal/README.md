@@ -29,3 +29,12 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+## Approach
+
+Run BFS one level at a time. Insert values at the end or beginning of that level's linked list according to the alternating direction.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

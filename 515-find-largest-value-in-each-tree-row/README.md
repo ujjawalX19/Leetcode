@@ -22,3 +22,12 @@
 	<li>The number of nodes in the tree will be in the range <code>[0, 10<sup>4</sup>]</code>.</li>
 	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+## Approach
+
+Use BFS and compute a maximum while processing each level. Append that maximum after every level is complete.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(n)`

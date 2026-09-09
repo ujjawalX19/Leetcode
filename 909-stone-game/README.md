@@ -36,3 +36,12 @@ This demonstrated that taking the first 5 was a winning move for Alice, so we re
 	<li><code>1 &lt;= piles[i] &lt;= 500</code></li>
 	<li><code>sum(piles[i])</code> is <strong>odd</strong>.</li>
 </ul>
+
+## Approach
+
+The implementation returns `true` directly. Under the problem constraints—an even number of piles and an odd total—Alice is guaranteed to win with optimal play.
+
+## Complexity
+
+- Time: `O(1)`
+- Space: `O(1)`

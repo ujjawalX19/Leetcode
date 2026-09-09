@@ -23,3 +23,12 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong>&nbsp;Can you solve the problem in <code>O(1)</code>&nbsp;extra&nbsp;space complexity? (The output array <strong>does not</strong> count as extra space for space complexity analysis.)</p>
+
+## Approach
+
+Write prefix products into the output array, then traverse from right to left and multiply each entry by the running suffix product. No division is used.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(1)` extra space (`O(n)` including the output)

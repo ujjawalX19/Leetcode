@@ -41,3 +41,12 @@ AB -&gt; 28
 <ul>
 	<li><code>1 &lt;= columnNumber &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+## Approach
+
+Treat the column number as a base-26 value with digits `A` through `Z`. Decrement first to make the digits zero-based, append remainders, then reverse.
+
+## Complexity
+
+- Time: `O(log_{26} n)`
+- Space: `O(log_{26} n)` for the result

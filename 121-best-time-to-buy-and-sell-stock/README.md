@@ -29,3 +29,12 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 	<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+## Approach
+
+Scan prices once, tracking the lowest price seen so far and the best profit obtainable by selling today.
+
+## Complexity
+
+- Time: `O(n)`
+- Space: `O(1)`
